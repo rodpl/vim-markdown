@@ -79,9 +79,9 @@ syn region markdownNestedCodeBlock start="^        \|^\t\t" end="^    $" contain
 "
 "   TODO: real nesting
 "
-syn region markdownOrderedList matchgroup=markdownOrderedListMarker start=" \{0,4}\<\d\+\.\%(\s*\S\)\@=" end="^\z1$" contains=@markdownNestable
-"syn match markdownListMarker " \{0,4\}[-*+]\%(\s\+\S\)\@=" contained
-"syn match markdownOrderedListMarker " \{0,4}\<\d\+\.\%(\s*\S\)\@=" contained
+"syn region markdownOrderedList matchgroup=markdownOrderedListMarker start=" \{0,4}\<\d\+\.\%(\s*\S\)\@=" end="^\z1$" contains=@markdownNestable
+syn match markdownListMarker " \{0,4\}[-*+]\%(\s\+\S\)\@=" contained
+syn match markdownOrderedListMarker " \{0,4}\<\d\+\.\%(\s*\S\)\@=" contained
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
